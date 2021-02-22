@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MyCalc</string>
+    <string name="button0Caption">0</string>
+    <string name="button1Caption">1</string>
+    <string name="button2Caption">2</string>
+    <string name="button3Caption">3</string>
+    <string name="button4Caption">4</string>
+    <string name="button5Caption">5</string>
+    <string name="button6Caption">6</string>
+    <string name="button7Caption">7</string>
+    <string name="button8Caption">8</string>
+    <string name="button9Caption">9</string>
+    <string name="buttonMinusCaption">-</string>
+    <string name="buttonPlusCaption">+</string>
+    <string name="buttonEquallyCaption">=</string>
+    <string name="buttonPointCaption">.</string>
+    <string name="buttonResetCaption">CE</string>
+    <string name="buttonPercentCaption">%</string>
+    <string name="buttonSignCaption">+-</string>
+    <string name="buttonMultiplyCaption">*</string>
+    <string name="buttonDivideCaption">/</string>
 </resources>
