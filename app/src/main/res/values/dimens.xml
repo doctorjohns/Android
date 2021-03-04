@@ -4,4 +4,7 @@
     <dimen name="buttonMarginRight">10dp</dimen>
     <dimen name="buttonPaddingBottom">20sp</dimen>
     <dimen name="buttonTextSize">24sp</dimen>
+    <dimen name="landButtonTextSize">18sp</dimen>
+    <dimen name="landButtonPaddingTop">10sp</dimen>
+    <dimen name="landButtonPaddingBottom">10sp</dimen>
 </resources>

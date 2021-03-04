@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button1Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button2Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button3Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button4Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button5Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button6Caption"
+                android:textSize="@dimen/buttonTextSize" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button7Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button8Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button9Caption"
+                android:textSize="@dimen/buttonTextSize" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonCE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:layout_span="2"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonResetCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonPercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonPercentCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonSignCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonMinusCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonPlusCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonMultiplyCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonDivide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonDivideCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/button0Caption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonPointCaption"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:id="@+id/buttonEqually"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:layout_span="2"
+                android:paddingTop="@dimen/landButtonPaddingTop"
+                android:paddingBottom="@dimen/landButtonPaddingBottom"
+                android:text="@string/buttonEquallyCaption"
+                android:textSize="@dimen/buttonTextSize" />
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>
