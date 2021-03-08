@@ -7,10 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView mTextView;
+    private TextView mTextViewMain;
     private TextView mTextViewResult;
     private Button mButton0;
     private Button mButton1;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextView = findViewById(R.id.textView);
+        mTextViewMain = findViewById(R.id.textViewMain);
         mTextViewResult = findViewById(R.id.textViewResult);
         mButton0 = findViewById(R.id.button0);
         mButton1 = findViewById(R.id.button1);
@@ -140,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
     private void resetData() {
         mResult = "0";
         checkAddZero = false;
-        mTextView.setText("0");
+        mTextViewMain.setText("0");
         mTextViewResult.setText(" ");
         mResultOperation = " ";
     }
@@ -184,10 +183,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void printToTextView(String mResultText) {
         if (mResultText.length() < 21) {
-            mTextView.setText(mResultText);
+            mTextViewMain.setText(mResultText);
             mTextViewResult.setText(mResultOperation);
         } else
-            mTextView.setText("Error");
+            mTextViewMain.setText("Error");
     }
 
     private void getResult() {
@@ -232,8 +231,8 @@ public class MainActivity extends AppCompatActivity {
         state.putBoolean("save_checkAddZero", checkAddZero);
         state.putBoolean("save_checkFirstOperation", checkFirstOperation);
         state.putBoolean("save_checkComputeComplete", checkComputeComplete);
-        state.putString("save_mTextView", (String) mTextView.getText());
-        state.putString("save_mTextViewResult", (String) mTextView.getText());
+        state.putString("save_mTextView", (String) mTextViewMain.getText());
+        state.putString("save_mTextViewResult", (String) mTextViewMain.getText());
     }
 
     @Override
@@ -248,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
         checkAddZero = state.getBoolean("save_checkAddZero");
         checkFirstOperation = state.getBoolean("save_checkFirstOperation");
         checkComputeComplete = state.getBoolean("save_checkComputeComplete");
-        mTextView.setText(state.getString("save_mTextView"));
+        mTextViewMain.setText(state.getString("save_mTextView"));
         mTextViewResult.setText(state.getString("save_mTextViewResult"));
 
     }
