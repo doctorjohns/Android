@@ -9,6 +9,7 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
+
     private TextView mTextViewMain;
     private TextView mTextViewResult;
     private Button mButton0;
