@@ -9,6 +9,12 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String appTheme = "APP_THEME";
+    private static final int MyCoolCodeStyle = 0;
+    private static final int AppThemeLightCodeStyle = 1;
+    private static final int AppThemeCodeStyle = 2;
+    private static final int AppThemeDarkCodeStyle = 3;
+
 
     private TextView mTextViewMain;
     private TextView mTextViewResult;
