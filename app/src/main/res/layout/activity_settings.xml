@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="36sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="36sp"/>
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonStandartTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Стандартная тема" />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonDarkTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Темная тема" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

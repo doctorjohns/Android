@@ -2,18 +2,17 @@ package xyz.gudkov.android1.mycalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.material.button.MaterialButton;
+
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String appTheme = "APP_THEME";
-    private static final int MyCoolCodeStyle = 0;
-    private static final int AppThemeLightCodeStyle = 1;
-    private static final int AppThemeCodeStyle = 2;
-    private static final int AppThemeDarkCodeStyle = 3;
+
 
 
     private TextView mTextViewMain;
@@ -52,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme((R.style.StandartTheme));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -141,6 +141,11 @@ public class MainActivity extends AppCompatActivity {
         mButtonEqually.setOnClickListener((view -> {
             getResult();
         }));
+        MaterialButton settingsButton = findViewById(R.id.button_settings);
+        settingsButton.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        });
     }
 
     private void resetData() {

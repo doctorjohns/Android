@@ -10,11 +10,11 @@
 
     <dimen name="TextViewMainPaddingStart">20dp</dimen>
     <dimen name="TextViewMainTextSize">32sp</dimen>
-    <dimen name="TextViewMainMarginBottom">60dp</dimen>
+    <dimen name="TextViewMainMarginBottom">20dp</dimen>
 
 
     <dimen name="TextViewResultPaddingStart">10dp</dimen>
-    <dimen name="TextViewResultMarginTop">60dp</dimen>
+    <dimen name="TextViewResultMarginTop">40dp</dimen>
     <dimen name="TextViewResultTextSize">24sp</dimen>
     // landscape
     <dimen name="LandButtonTextSize">18sp</dimen>
