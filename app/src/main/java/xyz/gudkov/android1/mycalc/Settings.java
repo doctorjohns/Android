@@ -14,14 +14,13 @@ import android.widget.RadioGroup;
 
 public class Settings extends AppCompatActivity {
     // Имя настроек
-    private static final String NameSharedPreference = "LOGIN";
+    private static final String NameSharedPreference = "THEME";
     // Имя параметра в настройках
     private static final String AppTheme = "APP_THEME";
     private static final int StandartCodeTheme = 0;
     private static final int AppThemeDarkCodeStyle = 1;
-    public static final String KEY_NAME = "out.prefix.theme.name";
+    public static final String KEY_THEME = "out.prefix.theme.name";
     private static final int codeStyle = 0;
-
 
 
     @Override
@@ -33,39 +32,33 @@ public class Settings extends AppCompatActivity {
         initThemeChooser();
         MaterialButton buttonBack = findViewById(R.id.button_back);
         buttonBack.setOnClickListener((view) -> {
-
             Intent intent = new Intent(this, MainActivity.class);
             SharedPreferences sharedPref = getSharedPreferences(NameSharedPreference,
                     MODE_PRIVATE);
-            intent.putExtra(KEY_NAME, sharedPref.getInt(AppTheme, codeStyle));
+            intent.putExtra(KEY_THEME, sharedPref.getInt(AppTheme, codeStyle));
             startActivity(intent);
             finish();
         });
     }
-
     // Инициализация радиокнопок
     private void initThemeChooser() {
-
         initRadioButton(findViewById(R.id.radioButtonStandartTheme),
                 StandartCodeTheme);
         initRadioButton(findViewById(R.id.radioButtonDarkTheme),
                 AppThemeDarkCodeStyle);
         RadioGroup rg = findViewById(R.id.radioButtons);
-        //((MaterialRadioButton) rg.getChildAt(getCodeStyle(StandartCodeTheme))).setChecked(true);
     }
-
     // Все инициализации кнопок очень похожи, поэтому создадим метод дляпереиспользования
     private void initRadioButton(View button, int codeStyle) {
         button.setOnClickListener(v -> {
             // сохраним настройки
-
             setAppTheme(codeStyle);
-
             // пересоздадим активити, чтобы тема применилась
             recreate();
         });
     }
-    private int getAppTheme(int codeStyle) {
+
+    public int getAppTheme(int codeStyle) {
         return codeStyleToStyleId(getCodeStyle(codeStyle));
     }
 
@@ -88,7 +81,7 @@ public class Settings extends AppCompatActivity {
         editor.apply();
     }
 
-    private int codeStyleToStyleId(int codeStyle) {
+    private static int codeStyleToStyleId(int codeStyle) {
         switch (codeStyle) {
             case AppThemeDarkCodeStyle:
                 return R.style.DarkTheme;

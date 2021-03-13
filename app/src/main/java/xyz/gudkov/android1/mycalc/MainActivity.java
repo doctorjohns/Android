@@ -3,6 +3,7 @@ package xyz.gudkov.android1.mycalc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,7 +13,6 @@ import com.google.android.material.button.MaterialButton;
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
-
 
 
     private TextView mTextViewMain;
@@ -51,9 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         Intent intent = getIntent();
-        intent.getIntExtra(Settings.KEY_NAME, 0);
-        if ( intent.getIntExtra(Settings.KEY_NAME, 0) == 0) {
+        intent.getIntExtra(Settings.KEY_THEME, 0);
+        int codeStyle = intent.getIntExtra(Settings.KEY_THEME, 0);
+
+        if (codeStyle == 0) {
             setTheme((R.style.StandartTheme));
 
         } else {
