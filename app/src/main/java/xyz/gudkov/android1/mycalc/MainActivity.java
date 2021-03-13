@@ -51,7 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme((R.style.StandartTheme));
+        Intent intent = getIntent();
+        intent.getIntExtra(Settings.KEY_NAME, 0);
+        if ( intent.getIntExtra(Settings.KEY_NAME, 0) == 0) {
+            setTheme((R.style.StandartTheme));
+
+        } else {
+            setTheme((R.style.DarkTheme));
+
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -143,8 +152,8 @@ public class MainActivity extends AppCompatActivity {
         }));
         MaterialButton settingsButton = findViewById(R.id.button_settings);
         settingsButton.setOnClickListener((view) -> {
-            Intent intent = new Intent(this, Settings.class);
-            startActivity(intent);
+            Intent intent2 = new Intent(this, Settings.class);
+            startActivity(intent2);
         });
     }
 

@@ -2,6 +2,7 @@ package xyz.gudkov.android1.mycalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,8 @@ public class Settings extends AppCompatActivity {
     private static final String AppTheme = "APP_THEME";
     private static final int StandartCodeTheme = 0;
     private static final int AppThemeDarkCodeStyle = 1;
+    public static final String KEY_NAME = "out.prefix.theme.name";
+    private static final int codeStyle = 0;
 
 
 
@@ -30,6 +33,12 @@ public class Settings extends AppCompatActivity {
         initThemeChooser();
         MaterialButton buttonBack = findViewById(R.id.button_back);
         buttonBack.setOnClickListener((view) -> {
+
+            Intent intent = new Intent(this, MainActivity.class);
+            SharedPreferences sharedPref = getSharedPreferences(NameSharedPreference,
+                    MODE_PRIVATE);
+            intent.putExtra(KEY_NAME, sharedPref.getInt(AppTheme, codeStyle));
+            startActivity(intent);
             finish();
         });
     }
@@ -46,10 +55,12 @@ public class Settings extends AppCompatActivity {
     }
 
     // Все инициализации кнопок очень похожи, поэтому создадим метод дляпереиспользования
-    private void initRadioButton(View button, final int codeStyle) {
+    private void initRadioButton(View button, int codeStyle) {
         button.setOnClickListener(v -> {
             // сохраним настройки
+
             setAppTheme(codeStyle);
+
             // пересоздадим активити, чтобы тема применилась
             recreate();
         });
