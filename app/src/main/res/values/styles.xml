@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="cornerRadius">@dimen/ButtonCornerRadius</item>
+        <item name="android:layout_marginRight">@dimen/ButtonMarginRight</item>
+        <item name="android:paddingTop">@dimen/ButtonPaddingTop</item>
+        <item name="android:paddingBottom">@dimen/ButtonPaddingBottom</item>
+        <item name="android:textSize">@dimen/ButtonTextSize</item>
+    </style>
+
+    <style name="TextViewMain" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:layout_marginBottom">@dimen/TextViewMainMarginBottom</item>
+        <item name="android:background">@color/textViewMainColor</item>
+        <item name="android:paddingStart">@dimen/TextViewMainPaddingStart</item>
+        <item name="android:text">@string/TextViewMainText</item>
+        <item name="singleLine">true</item>
+        <item name="android:textSize">@dimen/TextViewMainTextSize</item>
+    </style>
+
+    <style name="TextViewResult">
+        <item name="android:layout_marginTop">@dimen/TextViewResultMarginTop</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:minLines">2</item>
+        <item name="paddingStart">@dimen/TextViewResultPaddingStart</item>
+        <item name="android:text">@string/TextViewMainResultText</item>
+        <item name="android:textSize">@dimen/TextViewResultTextSize</item>
+    </style>
+
+
+    //landscape
+
+    <style name="LandButton" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:layout_marginRight">@dimen/ButtonMarginRight</item>
+        <item name="android:paddingTop">@dimen/LandButtonPaddingTop</item>
+        <item name="android:paddingBottom">@dimen/ButtonPaddingBottom</item>
+        <item name="android:textSize">@dimen/ButtonTextSize</item>
+        <item name="cornerRadius">@dimen/ButtonCornerRadius</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LandTextViewResult" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingLeft">@dimen/TextViewResultPaddingStart</item>
+        <item name="android:text">@string/TextViewMainResultText</item>
+        <item name="android:textSize">@dimen/TextViewResultTextSize</item>
+        <item name="android:minLines">1</item>
+        <item name="maxLines">1</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LandTextViewMain" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:layout_marginBottom">@dimen/LandTextViewMainMarginBottom</item>
+        <item name="android:background">@color/textViewMainColor</item>
+        <item name="android:paddingLeft">@dimen/TextViewMainPaddingStart</item>
+        <item name="android:text">@string/TextViewMainText</item>
+        <item name="singleLine">true</item>
+        <item name="android:textSize">@dimen/TextViewMainTextSize</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">#f95542</item>
+    </style>
+
+
+
+    <style name="StandartTheme" parent="AppTheme">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/design_default_color_primary</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="DarkTheme" parent="Theme.MaterialComponents">
+        <item name="background">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+
+</resources>

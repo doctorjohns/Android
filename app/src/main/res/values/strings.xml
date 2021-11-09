@@ -19,4 +19,7 @@
     <string name="buttonSignCaption">+-</string>
     <string name="buttonMultiplyCaption">*</string>
     <string name="buttonDivideCaption">/</string>
+
+    <string name="TextViewMainText">0</string>
+    <string name="TextViewMainResultText">""</string>
 </resources>
